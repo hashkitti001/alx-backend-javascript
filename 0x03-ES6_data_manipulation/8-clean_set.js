@@ -8,3 +8,4 @@ function cleanSet(set, startString) {
   });
   return string.slice(0, string.length);
 }
+export default cleanSet
