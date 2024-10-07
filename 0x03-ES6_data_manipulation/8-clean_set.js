@@ -1,11 +1,17 @@
 function cleanSet(set, startString) {
-  let string = '';
-  set.forEach((item) => {
-    if (item.startsWith(startString)) {
-      string += item.replace('bon', '');
-      string += '-';
+  const parts = [];
+  if (!set || !startString || !(set instanceof Set) || typeof startString !== 'string') {
+    return '';
+  }
+  for (const value of set.values()) {
+    if (typeof value === 'string' && value.startsWith(startString)) {
+      const valueSubStr = value.substring(startString.length);
+
+      if (valueSubStr && valueSubStr !== value) {
+        parts.push(valueSubStr);
+      }
     }
-  });
-  return string.slice(0, string.length);
+  }
+  return parts.join('-');
 }
 export default cleanSet;
