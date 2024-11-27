@@ -1,5 +1,5 @@
 {
-  "name": "node_js_basics",
+  "name": "0x06-unittest",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -13,7 +13,6 @@
   "license": "ISC",
   "dependencies": {
     "chai-http": "^4.3.0",
-    "eslint-config-airbnb": "^19.0.4",
     "eslint-plugin-react": "^7.37.2",
     "express": "^4.17.1"
   },
@@ -23,6 +22,7 @@
     "babel-preset-env": "^1.7.0",
     "chai": "^4.2.0",
     "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^19.0.4",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-jest": "^22.17.0",

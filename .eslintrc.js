@@ -1,26 +1,17 @@
 module.exports = {
     "env": {
         "browser": true,
-        "es2021": true
+        "commonjs": true,
+        "es6": true
     },
-    "extends": "airbnb",
-    "overrides": [
-        {
-            "env": {
-                "node": true
-            },
-            "files": [
-                ".eslintrc.{js,cjs}"
-            ],
-            "parserOptions": {
-                "sourceType": "script"
-            }
-        }
-    ],
+    "extends": "eslint:recommended",
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
     "parserOptions": {
-        "ecmaVersion": "latest",
-        "sourceType": "module"
+        "ecmaVersion": 2018
     },
     "rules": {
     }
-}
+};
